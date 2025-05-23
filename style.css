@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.caption{
+   
+    @apply bg-[#333333] text-white text-xs md:text-[18px] px-1.5 md:px-3 py-1 md:py-2 rounded dark:bg-[#3C5378];
+}
+
+.head-card{
+
+    @apply md:text-2xl text-xl font-semibold pt-4 md:pt-8 pb-5;
+}
+.tag{
+    @apply bg-[#5677AC26] text-xs md:text-sm md:px-2 md:py-1 px-1.5 py-0.5 uppercase rounded-sm hover:bg-[#304059] hover:text-white cursor-pointer transition-all;
+}
+
+.market{
+    @apply text-center bg-[#E6EBF3] w-full  md:py-3 py-2 md:text-lg font-medium rounded-full  hover:bg-slate-300 transition-all hover:scale-105 duration-300 cursor-pointer;
+}
+
+.pera{
+    @apply text-[#1b1a1a] font-semibold md:text-lg text-xs pb-1 dark:text-white;
+}
+.work{
+    @apply md:text-base text-sm text-[#191a19ee] dark:text-gray-300;
+}
